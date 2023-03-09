@@ -7,7 +7,7 @@ import Spinner from '../components/Spinner';
 import { HomePageVideos } from '../Types';
 import Card from '../components/Card';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { clearVideos } from '../redux/store';
+import { clearVideos } from '../redux/store/Slices/YoutubeSlice';
 
 const Home = () => {
   const dispatch = useAppDispatch();
