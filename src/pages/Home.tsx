@@ -35,9 +35,10 @@ const Home = () => {
           next={() => dispatch(getHomePageVideos(true))}
           hasMore={VideoColorSpace.length < 500}
           loader={<Spinner />}
-          height={650}
+          height={800}
+          className='w-[85vw] flex flex-col items-center'
         >
-          <div className="grid gap-y-14 gap-x-8 grid-cols-4 p-8">
+          <div className="grid gap-y-14 gap-x-16 grid-cols-4 m-8 2xl:grid-cols-3  xl:grid-cols-2 lg:grid-cols-1 items-center">
             {videos.map((item:HomePageVideos) => {
               return <Card data={item} key={item.videoId} />
             })}

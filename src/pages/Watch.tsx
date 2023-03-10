@@ -42,9 +42,9 @@ const Watch = () => {
           <div style={{ height: "7.5vh" }}>
             <NavBar />
           </div>
-          <div className="flex w-full" style={{ height: "92.5vh" }}>
-            <div className="flex gap-y-10 gap-x-5 p-7 mx-20 mr-0 w-full overflow-auto">
-              <div style={{ maxWidth: "800px" }}>
+          <div className="flex w-full h-[92.5vh]">
+            <div className="flex gap-y-10 gap-x-7 p-7 mr-0 justify-evenly w-full overflow-auto xl:justify-center lg:scale-75 lg:-translate-y-20 lg:gap-y-0 ">
+              <div className='max-w-[800px]'>
                 <div>
                   <iframe
                     width="800"
@@ -139,7 +139,7 @@ const Watch = () => {
                   </div>
                 </div>
               </div>
-              <div className="mr-24 flex flex-col gap-3">
+              <div className="flex flex-col gap-3 w-[30%] xl:hidden">
                 {getRecommendedVideos.length &&
                   recommendedVideos.map((item) => {
                     return <WatchCard data={item} key={item.videoId} />;
