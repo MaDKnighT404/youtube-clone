@@ -103,7 +103,7 @@ const SideBar = () => {
   ];
 
   return (
-    <div className="w-2/12 min-w-[200px] bg-[#212121] overflow-auto pb-8 sidebar">
+    <div className="w-2/12 min-w-[200px] bg-[#212121] overflow-auto pb-8 sidebar md:hidden">
       <ul className="flex flex-col border-b-2 border-gray-700">
         {mainLinks.map(({ icon, name }) => {
           return (

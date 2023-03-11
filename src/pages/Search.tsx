@@ -39,7 +39,7 @@ const Search = () => {
               next={() => dispatch(getSearchPageVideos(true))}
               hasMore={VideoColorSpace.length < 500}
               loader={<Spinner />}
-              height={600}
+              height={800}
             >
               {videos.map((item: HomePageVideos) => {
                 return (
