@@ -43,21 +43,20 @@ const Watch = () => {
             <NavBar />
           </div>
           <div className="flex w-full h-[92.5vh]">
-            <div className="flex gap-y-10 gap-x-7 p-7 mr-0 justify-evenly w-full overflow-auto xl:justify-center lg:scale-75 lg:-translate-y-20 lg:gap-y-0 ">
-              <div className='max-w-[800px]'>
+            <div className="flex gap-y-10 gap-x-7 p-7 mr-0 justify-evenly w-full overflow-auto xl:justify-center  ">
+              <div className='max-w-[750px] md:max-w-[425px]'>
                 <div>
-                  <iframe
-                    width="800"
-                    height="502"
+                  <iframe className='w-[750px] h-[500px] md:max-w-[425px] md:max-h-[350px]'
+
                     src={`https://www.youtube.com/embed/${id}?autoplay=1`}
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                  ></iframe>
+                  />
                   <div className="mt-5">
                     <p className="text-xl">{currentPlaying.videoTitle}</p>
-                    <div className="flex justify-between mt-1">
+                    <div className="flex justify-between mt-1 lg:flex-col">
                       <div className="text-sm text-gray-400">
                         <span className="after:content-['•'] after:mx-1">
                           {currentPlaying.videoViews} views

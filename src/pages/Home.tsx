@@ -36,9 +36,9 @@ const Home = () => {
           hasMore={VideoColorSpace.length < 500}
           loader={<Spinner />}
           height={800}
-          className='w-[85vw] flex flex-col items-center'
+          className='w-[84vw] flex flex-col items-center lg:w-[80vw] sm:w-[100vw]'
         >
-          <div className="grid gap-y-14 gap-x-16 grid-cols-4 m-8 mt-12 2xl:grid-cols-3  xl:grid-cols-2 lg:grid-cols-1 items-center">
+          <div className="grid gap-y-14 gap-x-12 grid-cols-4 m-8 mt-12 2xl:grid-cols-3  xl:grid-cols-2 lg:grid-cols-1 items-center">
             {videos.map((item:HomePageVideos) => {
               return <Card data={item} key={item.videoId} />
             })}
